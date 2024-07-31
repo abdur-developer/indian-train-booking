@@ -1,0 +1,57 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+
+
+}
+
+android {
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.railindia.indianrailway"
+        minSdk 21
+        targetSdk 34
+        versionCode 3
+        versionName "1.3"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    namespace 'com.railindia.indianrailway'
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.github.fornewid:neumorphism:0.3.2'
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.2'
+    implementation "com.airbnb.android:lottie:3.4.1"
+
+    //Firebase Analiytic
+    implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-inappmessaging-display")
+
+    //notification
+    implementation ("com.google.firebase:firebase-messaging")
+    //start io
+    implementation 'com.startapp:inapp-sdk:5.0.2'
+
+}

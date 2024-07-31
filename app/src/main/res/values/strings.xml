@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Indian Train Booking</string>
+
+    <bool name="ADS_STATUS">true</bool>
+    <!--<integer name="ADS_INTERVAL">1</integer>
+    <string name="BANNER_AD_ID">903175021338778_904815221174758</string>
+    <string name="INTERSTITIAL_AD_ID">903175021338778_904817274507886</string>-->
+
+    <string name="st_app_id">206656954</string>
+
+
+</resources>

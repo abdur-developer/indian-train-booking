@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bannerLay"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="7dp"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/layMenuButtons"
+            android:orientation="vertical">
+
+
+            <!-- Image Slider  -->
+            <LinearLayout
+                android:id="@+id/layImageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <soup.neumorphism.NeumorphCardView
+                    android:id="@+id/neumorphCardView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:visibility="gone"
+                    app:neumorph_shadowColorDark="@color/shadow_color_bottom"
+                    app:neumorph_shadowColorLight="@color/shadow_color_top"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp">
+
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/image_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        app:iss_auto_cycle="true"
+                        app:iss_delay="0"
+                        app:iss_period="3000"
+                        app:iss_text_align="CENTER"
+                        app:iss_title_background="@color/slider_title_background"
+                        tools:ignore="MissingClass" />
+                </soup.neumorphism.NeumorphCardView>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/them"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cover"
+
+                />
+
+
+            <LinearLayout
+                android:id="@+id/layMenuButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.railindia.indianrailway.ExpandableHeightGridView
+                    android:id="@+id/mainGrid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:horizontalSpacing="10dp"
+                    android:isScrollContainer="false"
+                    android:numColumns="3"
+                    android:paddingBottom="20sp"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- Banner ad  -->
+    <LinearLayout
+        android:id="@+id/bannerLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.startapp.sdk.ads.banner.Banner
+            android:id="@+id/startAppBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!-- **************************************************** -->
+
+
+</RelativeLayout>

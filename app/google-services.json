@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1029375985786",
+    "project_id": "indian-train-booking",
+    "storage_bucket": "indian-train-booking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029375985786:android:ebcf1d36523e098470d3c3",
+        "android_client_info": {
+          "package_name": "com.railindia.indianrailway"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrTovcqmuioynmHcVkmAPa0LOoY6OM-zM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
